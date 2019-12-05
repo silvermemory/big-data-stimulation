@@ -17,7 +17,7 @@ data <- read.csv("review0-2.csv", header=TRUE)
 myText = data$text
 
 # set the columns names for the metadata - keep the quotation marks
-myContinuousValue = 'state'
+myContinuousValue = 'rating'
 
 # set the value - this is the hyperparameter that can be changed - much like with k-means clustering
 k = 4
