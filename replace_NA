@@ -1,0 +1,19 @@
+# tell R where your file is located
+setwd('C://Users//metl023//Desktop//simu')
+
+# tell R what file to use
+mydata <- read.csv("Customers.csv")
+
+# convert to a R data frame
+mydata <- data.frame(mydata)
+
+#replace all NA
+mydata$MonthlyRevenue= ifelse(is.na(mydata$MonthlyRevenue), mean(mydata$MonthlyRevenue,na.rm=TRUE),mydata$MonthlyRevenue)
+mydata$MonthlyMinutes= ifelse(is.na(mydata$MonthlyMinutes), mean(mydata$MonthlyMinutes,na.rm=TRUE),mydata$MonthlyMinutes)
+mydata$MonthsInService= ifelse(is.na(mydata$MonthsInService), mean(mydata$MonthsInService,na.rm=TRUE),mydata$MonthsInService)
+mydata$UniqueSubs= ifelse(is.na(mydata$UniqueSubs), mean(mydata$UniqueSubs,na.rm=TRUE),mydata$UniqueSubs)
+mydata$ActiveSubs= ifelse(is.na(mydata$ActiveSubs), mean(mydata$ActiveSubs,na.rm=TRUE),mydata$ActiveSubs)
+mydata$CurrentEquipmentDays= ifelse(is.na(mydata$CurrentEquipmentDays), mean(mydata$CurrentEquipmentDays,na.rm=TRUE),mydata$CurrentEquipmentDays)
+
+# write it back
+write.csv(mydata, file="Customer_replaced.csv", row.names=FALSE) 
