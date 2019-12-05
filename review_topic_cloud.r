@@ -23,7 +23,7 @@ myContinuousValue = 'rating'
 k = 7
 
 # insert any common words you would like the model to ignore here wrap them in quotation marks. If there are none leave blank
-customStopWords = c('said','told','didnt','called', 'back', 'call', 'asked', 'got','bonnets','broadband','get','dont','just','can','cant','service','will','now','customer', 'company','customers','thing','people','one')
+customStopWords = c('said','told','didnt','called', 'back', 'call', 'asked', 'got','bonnets','broadband','get','dont','just','can','cant','service','will','now','customer', 'company','customers','thing','people','one','something','nothing','everything','going','well','another','really','tell','right','like','talk','make','someone','first','want','first','every')
 
 ###############################################################
 ####  End of variables section							   ####
