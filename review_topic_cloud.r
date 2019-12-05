@@ -20,7 +20,7 @@ myText = data$text
 myContinuousValue = 'rating'
 
 # set the value - this is the hyperparameter that can be changed - much like with k-means clustering
-k = 7
+k = 4
 
 # insert any common words you would like the model to ignore here wrap them in quotation marks. If there are none leave blank
 customStopWords = c('said','told','didnt','called', 'back', 'call', 'asked', 'got','bonnets','broadband','get','dont','just','can','cant','service','will','now','customer', 'company','customers','thing','people','one','something','nothing','everything','going','well','another','really','tell','right','like','talk','make','someone','first','want','first','every')
